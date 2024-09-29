@@ -72,6 +72,8 @@ public class playerController : MonoBehaviour
                 GetComponent<SpriteRenderer>().enabled = false;
                 Destroy(gameObject, 1);
 			}
+			else if (transform.position.x > 70f)
+				Destroy(gameObject);
         }
     }
 	
